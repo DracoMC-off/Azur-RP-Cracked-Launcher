@@ -65,7 +65,7 @@ class Index {
                 generateUpdatesFilesForAllChannels: false,
                 appId: preductname,
                 productName: preductname,
-                copyright: 'Copyright © 2025 Luuxis, DracoMC',
+                copyright: 'Copyright © 2025 Luuxis, AzurRP',
                 artifactName: "${productName}-${os}-${arch}.${ext}",
                 extraMetadata: { main: 'app/app.js' },
                 files: ["app/**/*", "package.json", "LICENSE.md"],
@@ -133,7 +133,7 @@ class Index {
         }).then(() => {
             console.log('le build est terminé')
         }).catch(err => {
-            console.error('Erreur lors du Build!', err)
+            console.error('Error during build!', err)
         })
     }
 
@@ -159,9 +159,9 @@ class Index {
             fs.writeFileSync("src/assets/images/icon.icns", png2icons.createICNS(Buffer, png2icons.BILINEAR, 0));
             fs.writeFileSync("src/assets/images/icon.ico", png2icons.createICO(Buffer, png2icons.HERMITE, 0, false));
             fs.writeFileSync("src/assets/images/icon.png", Buffer);
-            console.log('nouvelle icon ajoutée')
+            console.log('new icon set')
         } else {
-            console.log('Erreur lors de de la connexion')
+            console.log('connection error')
         }
     }
 }
