@@ -1,7 +1,7 @@
 {
     "name": "Azur-RP-Cracked-Launcher",
     "preductname": "AzurRP Cracked Launcher",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Launcher Mincraft Crack pour le serveur AzurRP",
     "main": "src/app.js",
     "author": {
